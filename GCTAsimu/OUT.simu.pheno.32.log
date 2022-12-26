@@ -1,0 +1,72 @@
+*******************************************************************
+* Genome-wide Complex Trait Analysis (GCTA)
+* version v1.94.1 Linux
+* Built at Nov 15 2022 21:14:25, by GCC 8.5
+* (C) 2010-present, Yang Lab, Westlake University
+* Please report bugs to Jian Yang <jian.yang@westlake.edu.cn>
+*******************************************************************
+Analysis started at 12:49:09 CET on Tue Dec 20 2022.
+Hostname: CGF-C9X299-PG300F
+
+Accepted options:
+--grm ../meala.gcta
+--pheno simu.pheno.32
+--thread-num 5
+--reml
+--out OUT.simu.pheno.32
+
+Note: the program will be running on 5 threads.
+
+Reading IDs of the GRM from [../meala.gcta.grm.id].
+3051 IDs are read from [../meala.gcta.grm.id].
+Reading the GRM from [../meala.gcta.grm.bin].
+GRM for 3051 individuals are included from [../meala.gcta.grm.bin].
+Reading phenotypes from [simu.pheno.32].
+Non-missing phenotypes of 3051 individuals are included from [simu.pheno.32].
+
+3051 individuals are in common in these files.
+
+Performing  REML analysis ... (Note: may take hours depending on sample size).
+3051 observations, 1 fixed effect(s), and 2 variance component(s)(including residual variance).
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 2.35811 1.40942
+logL: -2616.5
+Running AI-REML algorithm ...
+Iter.	logL	V(G)	V(e)	
+1	-2357.97	2.40520	1.28708	
+2	-2340.74	2.43682	1.21775	
+3	-2333.82	2.45969	1.17521	
+4	-2330.84	2.47683	1.14793	
+5	-2329.51	2.48985	1.12994	
+6	-2328.91	2.49980	1.11789	
+7	-2328.63	2.52384	1.09202	
+8	-2328.38	2.53000	1.09173	
+9	-2328.38	2.53055	1.09167	
+10	-2328.38	2.53060	1.09166	
+Log-likelihood ratio converged.
+
+Calculating the logLikelihood for the reduced model ...
+(variance component 1 is dropped from the model)
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 4.93544
+logL: -3963.58584
+Running AI-REML algorithm ...
+Iter.	logL	V(e)	
+1	-3963.59	4.93544	
+Log-likelihood ratio converged.
+
+Summary result of REML analysis:
+Source	Variance	SE
+V(G)	2.530601	0.206928
+V(e)	1.091662	0.036718
+Vp	3.622263	0.196045
+V(G)/Vp	0.698624	0.020942
+
+Sampling variance/covariance of the estimates of variance components:
+4.281926e-02	-2.867011e-03	
+-2.867011e-03	1.348229e-03	
+
+Summary result of REML analysis has been saved in the file [OUT.simu.pheno.32.hsq].
+
+Analysis finished at 12:49:12 CET on Tue Dec 20 2022
+Overall computational time: 3.23 sec.
